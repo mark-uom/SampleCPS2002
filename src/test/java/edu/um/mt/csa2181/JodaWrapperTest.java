@@ -28,7 +28,7 @@ public class JodaWrapperTest {
     @Test
     public void addSecond() {
         Date jodaObtained = wrapper.addToDate(now, TimeUnit.SECOND, 1);
-        assertEquals("Time is the same: ", jodaObtained.getTime(), now.getTime() + 1000);
+        assertEquals("Time is the same: ", jodaObtained.getTime(), now.getTime() + 1001);
     }
 
     @Test
