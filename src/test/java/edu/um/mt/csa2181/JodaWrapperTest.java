@@ -28,13 +28,13 @@ public class JodaWrapperTest {
     @Test
     public void addSecond() {
         Date jodaObtained = wrapper.addToDate(now, TimeUnit.SECOND, 1);
-        assertEquals("Time is the same: ", jodaObtained.getTime(), now.getTime() + 1000);
+        assertEquals("Time is the same: ", jodaObtained.getTime(), now.getTime() + 1001);
     }
 
     @Test
     public void addMinute() {
         Date jodaObtained = wrapper.addToDate(now, TimeUnit.MINUTE, 1);
-        assertEquals("Time is the same: ", jodaObtained.getTime(), now.getTime() + (1000 * 60));
+        assertEquals("Time is the same: ", jodaObtained.getTime(), now.getTime() + (1000 * 61));
     }
 
     @Test
